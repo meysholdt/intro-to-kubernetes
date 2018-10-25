@@ -1,6 +1,6 @@
 # History
 
-presented at [EclipseCon Europe 2018] (https://www.eclipsecon.org/europe2018/sessions/introduction-kubernetes)
+presented at [EclipseCon Europe 2018](https://www.eclipsecon.org/europe2018/sessions/introduction-kubernetes)
 
 # Demo-Script
 
