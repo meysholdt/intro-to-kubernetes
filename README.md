@@ -4,8 +4,10 @@ presented at [EclipseCon Europe 2018](https://www.eclipsecon.org/europe2018/sess
 
 # Demo-Script
 
-## prerequisite
+The demo has been inspired by the [Hello Minikube Tutorial](https://kubernetes.io/docs/tutorials/hello-minikube/)
 
+
+## prerequisite
 1. have docker installed and the `docker` command working
 2. have kubernetes installed and the `kubectrl` command working
 
