@@ -10,11 +10,18 @@ spec:
         app: hello-node
     spec:
       containers:
-      - image: hello-node:v1
-        name: hello-node
-        ports:
-        - containerPort: 8080
-          protocol: TCP
+        - image: hello-node:v1
+          name: hello-node
+          ports:
+            - containerPort: 8080
+              protocol: TCP
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "250m"
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
 ---
 apiVersion: v1
 kind: Service
@@ -23,8 +30,8 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-  - port: 8080
-    protocol: TCP
-    targetPort: 8080
+    - port: 8080
+      protocol: TCP
+      targetPort: 8080
   selector:
     app: hello-node
